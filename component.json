@@ -1,0 +1,16 @@
+{
+  "name": "indexOf",
+  "repo": "JayceTDE/indexOf",
+  "description": "Find index of object with value",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {
+    "timoxley/assert": "*"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}

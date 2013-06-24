@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>    
+</head>
+<body>
+
+<script src="build/build.js"></script>
+<script>
+
+    var assert = require('assert')
+      , indexOf = require('indexOf')
+    ;
+    
+    var arr = [
+        {
+            a: 'A'
+          , b: 'B'
+          , c: 'C'
+          , d: 'D'
+        },
+        {
+            a: 'Z'
+          , b: 'Y'
+          , c: 'X'
+          , d: 'W'
+        },
+        {
+            a: 'A'
+          , b: 2
+          , c: 3
+          , d: 4
+        }
+    ];
+    
+    assert.strictEqual(indexOf(arr, { b: 'B' }), 0);
+    assert.strictEqual(indexOf(arr, { c: 'X' }), 1);
+    assert.strictEqual(indexOf(arr, { d: 'm' }), -1);
+    assert.strictEqual(indexOf(arr, { b: 2 }), 2);
+    assert.strictEqual(indexOf(arr, { a: 'A', c: 3 }), 2);
+    assert.strictEqual(indexOf(arr, { a: 'A', d: 'W'}), -1);
+    
+    console.log('Done Testing');
+    
+
+</script>
+
+</body>
+</html>
